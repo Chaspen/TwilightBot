@@ -1,6 +1,5 @@
 # Dependencies
 - mastodon.py
-- apscheduler
 
 
 
