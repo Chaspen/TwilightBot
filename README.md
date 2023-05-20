@@ -1,1 +1,3 @@
-# TwilightBot
+#Dependencies
+- mastodon.py
+- apscheduler
