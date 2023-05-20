@@ -1,5 +1,4 @@
 from mastodon import Mastodon
-from apscheduler.schedulers.blocking import BlockingScheduler
 import os, random
 from datetime import datetime
 
@@ -17,6 +16,4 @@ def PostTwi():
     mastodon.status_post("!!New Twilight Image!!", media_ids=media)
     print('posted a twi at ' + dt_string  + ' :3')
     
-scheduler = BlockingScheduler()
-scheduler.add_job(PostTwi, 'interval', hours=1)
-scheduler.start()
+PostTwi()
